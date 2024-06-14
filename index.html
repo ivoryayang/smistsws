@@ -167,9 +167,9 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Test Set Examples</h2>
-          <p>We show some examples from our benchmark (for evaluation purpose; bottow two rows) in comparison with the synthetic data created by Huggingface (for training purpose; first row). Our benchmark contains diverse real-world webpages with varying levels of complexities. (Image files are replaced with a placeholder blue box.)</p>
-          <img src="./static/images/test_examples_compare.png" class="example-image" alt="Example image."/>
+          <h2 class="title is-3">Overall Framework</h2>
+          <p>Our DARG framework we first construct the reasoning graphs for data points in given benchmarks using LLMs (e.g., computational reasoning graphs for solving a math problem are shown in the following figure). Next, we perform fine-grained graph perturbations based on various dimensions of the reasoning graph. Afterwards, we convert the reasoning graph back into the description that adapts the linguistic diversity as the original data. In order to ensure the correctness of the reasoning graph construction and graph-to-text generation, we use tool-augmented LLMs to verify the quality of reasoning graphs and generated text to produce valid test examples.</p>
+          <img src="./static/images/framework.png" class="example-image" alt="Example image."/>
         </div>
       </div>
     </div>
@@ -181,10 +181,11 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Benchmark Performance: Automatic Metrics</h2>
-          <p>For automatic evaluation, we consider high-level visual similarity (CLIP) and low-level element matching (block-match, text, position, color).
-          We compare all the benchmarked models along these different dimensions.</p>
-          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 60%;"/></center>
+          <h2 class="title is-3">LLMs' Performances on MATH Reasoning</h2>
+          <p>We evaluate 15 SOTA LLMs on GSM8K using DARG with reasoning graphs of increased width, depth, and numerical complexity. Almost all LLMs' performances drop, while closed-source models and larger models show more resilience to complexity increases.</p>
+          <center><img src="./static/images/gsm8k_result_figure.png" class="example-image" alt="Example image." style="width: 60%;"/></center>
+          <center><img src="./static/images/gsm8k_table.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
+          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
         </div>
       </div>
     </div>
