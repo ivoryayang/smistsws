@@ -212,10 +212,14 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Benchmark Performance: Human Evaluation</h2>
-          <p>We recruit human annotators to judge pairwise model output preference. The Win/Tie/Lose rate against the baseline (Gemini Pro Vision Direct Prompting). We sample 100 examples and ask 5 annotators for each pair of comparison, and we
-            take the majority vote on each example.</p>
-          <img src="./static/images/human_eval_win_rate.png" class="example-image" alt="Example image."/>
+          <h2 class="title is-3">Spatial Reasoning</h2>
+          <p>We evaluate SOTA LLMs on the BBH Navigate dataset, a spatial reasoning dataset that involves giving the LLM navigation
+          steps to determine if the agent returns to the starting point. As the depth of the reasoning graph increases, most LLMs'
+          overall accuracy drops, with a significant decline in accuracy on positive cases (where the label is 'Yes') while the
+          accuracy on negative cases remains comparatively stable, indicating biases.</p>
+          <img src="./static/images/navigate_overall.png" class="example-image" alt="Example image."/>
+          <img src="./static/images/navigate_negative.png" class="example-image" alt="Example image." />
+          <img src="./static/images/navigate_positive.png" class="example-image" alt="Example image." />
         </div>
       </div>
     </div>
