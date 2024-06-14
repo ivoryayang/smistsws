@@ -1,4 +1,4 @@
-This is the repository that contains source code for the [DARG website](https://salt-nlp.github.io/Design2Code/).
+This is the repository that contains source code for the [DARG website](https://salt-nlp.github.io/DARG_website/).
 
 The website code is borrowed from the [Nerfies website](https://nerfies.github.io).
 

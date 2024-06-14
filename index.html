@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Design2Code: How Far Are We From Automating Front-End Engineering">
+        content="DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph">
   <meta name="keywords" content="Design2Code">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design2Code: How Far Are We From Automating Front-End Engineering</title>
+  <title>DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -86,41 +86,29 @@
           <h1 class="title is-1 publication-title">Design2Code: How Far Are We From Automating Front-End Engineering</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://noviscl.github.io/">Chenglei Si*</a><sup>1</sup>,</span>
+              <a href="https://zzh-sjtu.github.io/zhehaozhang.github.io/">Zhehao Zhang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://stevenyzzhang.github.io/website/">Yanzhe Zhang*</a><sup>2</sup>,</span>
+              <a href="https://cs.stanford.edu/people/jiaaoc/">Jiaao Chen</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://zyang-ur.github.io/">Zhengyuan Yang</a><sup>3</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.cs.dartmouth.edu/~rbliu/">Ruibo Liu</a><sup>4</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://cs.stanford.edu/~diyiy/">Diyi Yang</a><sup>1</sup>
+              <a href="https://cs.stanford.edu/~diyiy/">Diyi Yang</a><sup>3</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Stanford University,</span>
+            <span class="author-block"><sup>1</sup>Dartmouth College,</span>
             <span class="author-block"><sup>2</sup>Georgia Tech,</span>
-            <span class="author-block"><sup>3</sup>Microsoft,</span>
-            <span class="author-block"><sup>4</sup>Google DeepMind</span>
+            <span class="author-block"><sup>3</sup>Stanford University,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <img src="./static/images/stanford-university-logo-2.png" width="200" align="absmiddle"/>  
+              <img src="./static/images/Dartmouth-College-Logo.png" width="200" align="absmiddle" />
             </span>
             <span class="author-block">
-              <img src="./static/images/GeorgiaTech_RGB.png" style="margin-right: 50px;" width="200" align="absmiddle"/>  
-            </span><!---->
-          </div>
-
-          <div class="is-size-5 publication-authors">
+              <img src="./static/images/GeorgiaTech_RGB.png" width="200" align="absmiddle"/>  
+            </span>
             <span class="author-block">
-              <img src="./static/images/Microsoft_logo.svg" style="margin-right: 50px;" width="200" align="absmiddle"/>  
-            </span><!---->
-            <span class="author-block">
-              <img src="./static/images/DeepMind_new_logo.png" style="margin-right: 50px;" width="200" align="absmiddle"/>  
+              <img src="./static/images/stanford-university-logo-2.png" style="margin-right: 50px;" width="200" align="absmiddle"/>  
             </span><!---->
           </div>
 
@@ -128,7 +116,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.03163"
+                <a href="https://arxiv.org"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -138,7 +126,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/NoviScl/Design2Code"
+                <a href="https://github.com/SALT-NLP/DARG"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -146,15 +134,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/SALT-NLP/Design2Code"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
           </div>
         </div>
@@ -173,7 +152,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Generative AI has made rapid advancements in recent years, achieving unprecedented capabilities in multimodal understanding and code generation. This enabled a brand new paradigm of front-end development, where multimodal LLMs can potentially <strong>convert visual designs into code implementations directly</strong>, thus automating the front-end engineering pipeline. In this work, we provide the first systematic study on this visual design to code implementation task (dubbed as Design2Code). We manually curate a benchmark of 484 real-world webpages as test cases and develop a set of automatic evaluation metrics to assess how well current multimodal LLMs can generate the code implementations that directly render into the given reference webpages, given the screenshots as input. We develop a suit of multimodal prompting methods and show their effectiveness on GPT-4V and Gemini Vision Pro. We also finetune an <strong>open-source Design2Code-18B model that successfully matches the performance of Gemini Pro Vision</strong>. Both human evaluation and automatic metrics show that GPT-4V is the clear winner on this task, where annotators think GPT-4V generated webpages can replace the original reference webpages in <strong>49%</strong> cases in terms of visual appearance and content; and perhaps surprisingly, in <strong>64%</strong> cases GPT-4V generated webpages are considered better than even the original reference webpages. Our fine-grained break-down metrics indicate that open-source models mostly lag in recalling visual elements from the input webpages and in generating correct layout designs, while aspects like text content and coloring can be drastically improved with proper finetuning.
+            The current paradigm of evaluating Large Language Models (LLMs) through static benchmarks comes with significant limitations, such as vulnerability to data contamination and a lack of adaptability to the evolving capabilities of LLMs. Therefore, evaluation methods that can adapt and generate evaluation data with controlled complexity are urgently needed. In this work, we introduce Dynamic Evaluation of LLMs via Adaptive Reasoning Graph Evolvement (DARG) to dynamically extend current benchmarks with controlled complexity and diversity. Specifically, we first extract the reasoning graphs of data points in current benchmarks and then perturb the reasoning graphs to generate novel testing data. Such newly generated test samples can have different levels of complexity while maintaining linguistic diversity similar to the original benchmarks. We further use a code-augmented LLM to ensure the label correctness of newly generated data. We apply our DARG framework to diverse reasoning tasks in four domains with 15 state-of-the-art LLMs. Experimental results show that almost all LLMs experience a performance decrease with increased complexity and certain LLMs exhibit significant drops. Additionally, we find that LLMs exhibit more biases when being evaluated via the data generated by DARG with higher complexity levels. These observations provide useful insights into how to dynamically and adaptively evaluate LLMs.
           </p>
         </div>
       </div>
