@@ -208,22 +208,33 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-      <div class="column">
+      <div class="column is-full">
         <div class="content">
           <h2 class="title is-3">Spatial Reasoning</h2>
-          <p>We evaluate SOTA LLMs on the BBH Navigate dataset, a spatial reasoning dataset that involves giving the LLM navigation
-          steps to determine if the agent returns to the starting point. As the depth of the reasoning graph increases, most LLMs'
-          overall accuracy drops, with a significant decline in accuracy on positive cases (where the label is 'Yes') while the
-          accuracy on negative cases remains comparatively stable, indicating biases.</p>
-          <img src="./static/images/navigate_overall.png" class="example-image" alt="Example image."/>
-          <img src="./static/images/navigate_negative.png" class="example-image" alt="Example image." />
-          <img src="./static/images/navigate_positive.png" class="example-image" alt="Example image." />
+          <p>We evaluate SOTA LLMs on the BIG-Bench Hard (BBH) Navigate dataset, a spatial reasoning dataset that involves giving the LLM
+            navigation steps to determine if the agent returns to the starting point. As the depth of the reasoning graph
+            increases, most LLMs' overall accuracy drops, with a significant decline in accuracy on positive cases (where the label is 'Yes')
+            while the accuracy on negative cases remains comparatively stable, indicating biases.</p>
+          <div class="columns">
+            <div class="column is-one-third">
+              <img src="./static/images/navigate_overall.png" class="example-image" alt="Overall performance image." />
+            </div>
+            <div class="column is-one-third">
+              <img src="./static/images/navigate_negative.png" class="example-image"
+                alt="Negative case performance image." />
+            </div>
+            <div class="column is-one-third">
+              <img src="./static/images/navigate_positive.png" class="example-image"
+                alt="Positive case performance image." />
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
+
 
 
 
@@ -233,78 +244,13 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Model Comparison Examples</h2>
-          <p>We present some case study examples to compare between different prompting methods and different models.</p>
-          <img src="./static/images/text_augmentation_example.png" class="example-image" alt="Example image."/>
-          <img src="./static/images/self_revision_examples.png" class="example-image" alt="Example image."/>
-          <img src="./static/images/open_source_models.png" class="example-image" alt="Example image."/>
-          
+          <h2 class="title is-3">Symbolic Reasoning</h2>
+          <p>We evaluate SOTA LLMs on the BIG-Bench Hard (BBH) Dyck Language dataset, a symbolic reasoning dataset that requires the model to predict the sequence of closing parentheses for a Dyck-4 word missing its last few closing parentheses. As the depth of the reasoning graph's input and output parts increases, all LLMs' performances tend to decrease.</p>
+          <img src="./static/images/BBH_dyck_results.png" class="example-image" alt="Example image."/>
         </div>
       </div>
     </div>
 </section>
-
-<section class="section"  style="background-color:#d6eeff">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Additional GPT-4V Generation Examples</h2>
-            <p>We present more examples of GPT-4V generated webpages in comparison with the original reference webpages. The original designs are on the left and the GPT-4V generated webpages are on the right. You can judge for yourself whether GPT-4V is ready to automate building webpages.</p>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_2.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_2.png" style="width:100%">
-                  </div>
-                </div>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_13.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_13.png" style="width:100%">
-                  </div>
-                </div>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_28.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_28.png" style="width:100%">
-                  </div>
-                </div>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_33.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_33.png" style="width:100%">
-                  </div>
-                </div>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_61.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_61.png" style="width:100%">
-                  </div>
-                </div>
-                <div class="imgrow">
-                  <div class="imgcolumn">
-                    <img src="./static/images/testset_full_89.png" style="width:100%">
-                  </div>
-                  <div class="imgcolumn">
-                    <img src="./static/images/gpt4v_visual_revision_prompting_89.png" style="width:100%">
-                  </div>
-                </div>
-        </div>
-      </div>
-    </div>
-</section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
