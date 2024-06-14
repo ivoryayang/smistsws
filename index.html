@@ -181,11 +181,25 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">LLMs' Performances on MATH Reasoning</h2>
+          <h2 class="title is-3">MATH Reasoning</h2>
           <p>We evaluate 15 SOTA LLMs on GSM8K using DARG with reasoning graphs of increased width, depth, and numerical complexity. Almost all LLMs' performances drop, while closed-source models and larger models show more resilience to complexity increases.</p>
-          <center><img src="./static/images/gsm8k_result_figure.png" class="example-image" alt="Example image." style="width: 60%;"/></center>
+          <center><img src="./static/images/gsm8k_result_figure.png" class="example-image" alt="Example image." style="width: 80%;"/></center>
           <center><img src="./static/images/gsm8k_table.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
-          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
+          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 80%;" /></center>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Social Reasoning</h2>
+          <p>We evaluate SOTA LLMs on the Bias Benchmark for QA (BBQ) using DARG with reasoning graphs that have an increased number of attribute nodes and modified attributes' polarity. The metrics are accuracy, bias score, and Overall Avoidance Rate, which measures how often LLMs are overly sensitive to contexts involving protected groups, often choosing 'Cannot be determined.' even when clear evidence supports an answer. LLMs perform worse as complexity increases and show increasing biases towards protected groups.</p>
+          <center><img src="./static/images/bbq_cot_results.png" class="example-image" alt="Example image." style="width: 80%;" /></center>
         </div>
       </div>
     </div>
