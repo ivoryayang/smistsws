@@ -191,11 +191,11 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Data Preparation</h2>
-          <p>We evaluate 15 SOTA LLMs on GSM8K using DARG with reasoning graphs of increased width, depth, and numerical complexity. Almost all LLMs' performances drop, while closed-source models and larger models show more resilience to complexity increases.</p>
+          <p>The study gathered verified misinformation on COVID-19, the Russo-Ukraine war, the 2020 US election, GMOs, and climate change from reputable sources like The New York Times, Wikipedia, and the Alliance for Science, each with a correction to create an authentic information corpus. COVID-19 misinformation was also rephrased into satire and conspiracy theory styles by a domain expert to explore susceptibility to these formats. Additionally, recent misinformation fact-checked by Snopes was included to assess the system’s ability to handle unfamiliar misinformation, ensuring robustness and validation for both human and model-based evaluations.</p>
           <center><img src="./static/images/misinfo_fig2.png" class="example-image" alt="Example image." style="width: 80%;"/></center>
-          <center><img src="./static/images/gsm8k_table.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
-          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 80%;" /></center>
-          <p>This radar map shows different LLMs' resilience to complexity increases, measured by the Complexity-Induced Accuracy Retention Rate (CIARR), which calculates the average percentage retention in accuracy per complexity increment as the average ratio of accuracy at each subsequent complexity level to the previous level.</p>
+          <!-- <center><img src="./static/images/gsm8k_table.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
+          <center><img src="./static/images/radar.png" class="example-image" alt="Example image." style="width: 80%;" /></center> -->
+          <p>The construction process of (a) an \ul{original fact-checked misinformation \& genuine information dataset}, (b) a \ul{COVID-19-related satire \& conspiracy theory dataset}, and (c) a \ul{recent misinformation dataset} containing misinformation fact-checked on Snopes after 02/04/2024. The number of (mis)information pieces under each category is also displayed.</p>
         </div>
       </div>
     </div>
