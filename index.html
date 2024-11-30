@@ -245,15 +245,13 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
 </section>
 
 
-
-
 <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Symbolic Reasoning</h2>
+          <h2 class="title is-3">Results</h2>
           <p>We evaluate SOTA LLMs on the BIG-Bench Hard (BBH) Dyck Language dataset, a symbolic reasoning dataset that requires the model to predict the sequence of closing parentheses for a Dyck-4 word missing its last few closing parentheses. As the depth of the reasoning graph's input and output parts increases, all LLMs' performances tend to decrease.</p>
           <img src="./static/images/BBH_dyck_results.png" class="example-image" alt="Example image."/>
         </div>
@@ -261,22 +259,6 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
     </div>
 </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Finetune LLMs with DARG generated data</h2>
-          <p>We compare Llama2-7B and Mistral-7B finetuned with DARG generated data and the origical GSM8K's training data, both models finetuned with DARG generated data can outperform the one finetuned with an equivalent amount of GSM8K's
-          original training data. This demonstrates DARG's potential not only to dynamically generate new test samples but also
-          to produce training data that enables LLMs to adapt to various complexity levels.</p>
-          <center><img src="./static/images/finetuned_results.png" class="example-image" alt="Example image." style="width: 60%;" /></center>
-        </div>
-      </div>
-    </div>
-</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -296,10 +278,7 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
   <div class="container is-max-desktop content">
     <h2 class="title">Usage and License Notices</h2>
     <p>
-      The data, code and model checkpoint are intended and licensed for research use only. Please do not use them for any malicious purposes.
-    </p>
-    <p>
-      The benchmark is built on top of the C4 dataset, under the ODC Attribution License (ODC-By). 
+      The data and code are intended and licensed for research use only. Please do not use them for any malicious purposes.
     </p>
     <p>
       This website is licensed under a <a rel="license"
@@ -309,6 +288,10 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
     <p>
       This source code of this website is borrowed from <a
         href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+    </p>
+    <p>
+      This website was made by <a rel="license"
+                                          href="http://https://ivoryayang.github.io/">Ivory Yang</a>.
     </p>
   </div>
 </section>
