@@ -207,9 +207,9 @@ Further, SMIST can be applied to emerging and anticipated misinformation scenari
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Social Reasoning</h2>
-          <p>We evaluate SOTA LLMs on the Bias Benchmark for QA (BBQ) using DARG with reasoning graphs that have an increased number of attribute nodes and modified attributes' polarity. The metrics are accuracy, bias score, and Overall Avoidance Rate, which measures how often LLMs are overly sensitive to contexts involving protected groups, often choosing 'Cannot be determined.' even when clear evidence supports an answer. LLMs perform worse as complexity increases and show increasing biases towards protected groups.</p>
-          <center><img src="./static/images/bbq_cot_results.png" class="example-image" alt="Example image." style="width: 80%;" /></center>
+          <h2 class="title is-3">Methodology</h2>
+          <center><img src="./static/images/misinfo_fig3.png" class="example-image" alt="Example image." style="width: 80%;"/></center>
+          <p>The SMIST methodology involves creating participant profiles using an LLM to ensure balanced demographic representation and guiding an LLM to respond to MIST questionnaires, simulating participant perspectives. The process leverages OpenAI’s GPT-3.5 for generating life experiences and GPT-4 for answering questionnaires. GPT-4 was selected after preliminary analyses showed its superior ability to simulate human responses compared to GPT-3.5 and Google BARD, leading us to focus our experiments exclusively on this model due to resource constraints.</p>
         </div>
       </div>
     </div>
